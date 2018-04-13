@@ -1,67 +1,67 @@
-# Installation
+# A. Installation
 Cara instalasi sebagai berikut
 
-## Clone Project
+## 1. Clone Project
 Clone project ini dengan perintah
 ```
 git clone https://gitlab.com/uripyogantara/pretest-prognet.git
 ```
 
-## Install Composer
+## 2. Install Composer
 Lakukan proses install composer dengan perintah berikut
 ```
 composer install
 ```
 
-## Buat file .env
+## 3. Buat file .env
 Buatlah file .env melalui text editor kalian (Sublime, Visual Studio Code), kemudian copy isi dari file .env.example ke file .env yang telah dibuat tadi.
 kemudian setting username, password, dan database kalian pada file .env
 
-## Generate APP_KEY
+## 4. Generate APP_KEY
 Lakukan generati application key dengan perintah berikut
 ```
 php artisan key:generate
 ```
 
-## Migrate database
+## 5. Migrate database
 Migrasi database dengan perintah
 ```
 php artisan migrate
 ```
 
-## Insert Data ke Database
+## 6. Insert Data ke Database
 Lakukan proses insert data ke database dengan perintah berikut
 ```
 php artisan db:seed
 ```
 
-## Jalankan Aplikasi
+## 7. Jalankan Aplikasi
 Jalankan aplikasi dengan perintah berikut
 ```
 php artisan serve
 ```
 
-# Push ke Git Repository
+# B. Push ke Git Repository
 Setelah selasai push hasil pretest ke git repository masing-masing dengan cara
 
-## Remote URL
+## 1. Remote URL
 Ubah URL git yang awalnya di URL saya ke URL kalian dengan sintak berikut.
 ```
 git remote set-url https://github.com/username/repository.git
 ```
 
-## Add
+## 2. Add
 ```
 git add .
 ```
 
-## Commit
+## 3. Commit
 Commit project dimana message disesuaikan dengan proses yang anda dapat, misalkan anda mendapat proses insert ke user, maka message-nya "insert user"
 ```
 git commit -m "message"
 ```
 
-## Push
+## 4. Push
 ```
 git push
 ```
