@@ -47,7 +47,7 @@ Setelah selasai push hasil pretest ke git repository masing-masing dengan cara
 ## 1. Remote URL
 Ubah URL git yang awalnya di URL saya ke URL kalian dengan sintak berikut.
 ```
-git remote set-url https://github.com/username/repository.git
+git remote set-url origin https://github.com/username/repository.git
 ```
 
 ## 2. Add
