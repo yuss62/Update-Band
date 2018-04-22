@@ -56,9 +56,12 @@ class BandController extends Controller
      * @param  \App\band  $band
      * @return \Illuminate\Http\Response
      */
-    public function edit(band $band)
+    public function edit($id)
     {
-        //
+        
+        $bands = band::where('id', $id)->first();
+       return view('band.edit',compact('bands'));
+
     }
 
     /**
@@ -68,9 +71,16 @@ class BandController extends Controller
      * @param  \App\band  $band
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, band $band)
+    public function update(Request $request, $id)
     {
-        //
+       $data = [
+            'name' => $request->name,
+            'vocalist' => $request->vocalist,
+            'genre' => $request->genre,
+            'since' => $request->since
+        ];
+        band::where('id', $id)->update($data);
+        return redirect('band');
     }
 
     /**

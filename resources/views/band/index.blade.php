@@ -23,7 +23,7 @@
             <td>{{$band->genre}}</td>
             <td>{{$band->since}}</td>
             <td>
-                <a href="#" class="btn btn-success">
+                <a href="{{URL('band/'.$band->id.'/edit')}}" class="btn btn-success">
                     <i class="fa fa-pencil"></i>
                 </a>
                 <a href="#" class="btn btn-danger">
